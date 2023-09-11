@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bootstrap Demo- Abstract Clone</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="styles.css">-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+    <style>
+        ul{
+            list-style: none;
+            
+        }
+        a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 600;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .ftr-header, h3{
+            color: white;
+        }
+        .ftr-txt{
+            color: white;
+        }
+        .search{
+            background-color: rgb(225, 217, 243);
+            padding: 8% 0;
+        }
+        .costum-Font{
+            font-size: large;
+        }
+        .logo-img{
+            width: 40px;
+            margin: 0 5px;
+            border-right: 2px;
+            background-color: white;
+            padding: 2px;
+            border-radius: 10px;
+        }
+        #searchInput {
+            transition: width 0.5s;
+        }
+        #searchInput.show {
+            width: 50%;
+        }
+    </style>
+    <body class="">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-xl py-2">
+
+                <div class="navbar-brand d-flex">
+                    <img src="Assets/arrow.png" alt="img-logo" class="logo-img">
+                    <h3 class="text-white">Abstract</h3>
+                    <a href="#" class="Link ms-1  text-decoration-none text-white">
+                        <h3 class="text-white">Help Center</h3>
+                    </a>
+
+                    <!--This adds a a mobile toggling btn, i wnt it to be initially hide-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btns"
+                    aria-controls="btns" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar toggler icon"><i class="bi bi-arrow-right"></i></span>
+                    </button>
+                </div>
+
+                <!--The code that goes inside is the one that will be collapsed-->
+                <div class="collapse navbar-collapse justify-content-center align-center" id="btns">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-md-none">Submit a request</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-md-none">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-light btn-lg me-3  d-none d-md-inline nav-btn" disabled>Submit a request</button>
+                    <button class="btn btn-primary d-none d-md-inline" type="submit">Sign in</button>
+                </div>
+
+
+            </div>
+          </nav>
+
+        <section class="search">
+            <div class="container-fluid p-1 w-75">
+                <p class=" display-1 fw-medium text-center ">How can we help you?</p>
+                <div class="input-group mb-3 w-75 mx-auto">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" >
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="bi bi-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section class="moreInfo">
+            <div class="container  my-5">
+                <div class="row">
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/navigation.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Using Abstract</h2>
+                            <p>Abstract lets you manage, version, and document your designs in one place.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/PPl.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Manage your account</h2>
+                            <p>Configure your account settings, such as your email, profile details, and password.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/puzzle.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Manage organizations, teams, and projects</h2>
+                            <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/dollar.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Manage Billing</h2>
+                            <p>Change subscriptions and payment details.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/keys.png" alt="" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Authentication to Abstract</h2>
+                            <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex g-5">
+                        <div>
+                            <img src="Assets/text.png" alt="Logo img" class="img-fluid w-50">
+                        </div>
+                        <div>
+                            <h2>Abstract support</h2>
+                            <p>Get in touch with a human.</p>
+                            <a href="" class="Link text-primary costum-Font">Learn More <span><i class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-black ">
+            <div class="container">
+
+            </div>
+            <div class="container w-75 ms-0 ms-md-auto">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-lg-3 g-3">
+                            <h2 class="ftr-header">Abstract</h2>
+                            <a href="" class="d-block ">Download</a>
+                            <a href="" class="d-block ">Pricing</a>
+                            <a href="#" class="d-block ">Start Trial</a>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-lg-3 g-3">
+                            <h2 class="ftr-header">Resources</h2>
+                            <a href="" class="d-block ">Blog</a>
+                            <a href="" class="d-block ">Help Center</a>
+                            <a href="" class="d-block ">Release Notes</a>
+                            <a href="" class="d-block ">Status</a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-3 g-3">
+                            <h2 class="ftr-header">Community</h2>
+                            <a href=""  class="d-block">Twitter</a>
+                            <a href="" class="d-block">LinkedIn</a>
+                            <a href="" class="d-block">Facebook</a>
+                            <a href="" class="d-block" >Dribble</a>
+                            <a href="" class="d-block">Podcast</a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-3 g-3">
+                            <h2 class="ftr-header">Company</h2>
+                            <a href="" class="d-block">About Us</a>
+                            <a href="" class="d-block">Careers</a>
+                            <a href="" class="d-block">Legal</a>
+                            <br>
+                            <h3>Contact Us</h3>
+                            <a href="#" class="Link ">info@abstract.com</a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col text-sm-end">
+                        <img src="Assets/arrow.png" alt="Logo image" class="logo-img">
+                        <p class="ftr-txt">©️Copyright 2023</p>
+                        <p class="ftr-txt">Abstract Studio Design, Inc</p>
+                        <p class="ftr-txt">All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+          
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    </body>
+</html>
